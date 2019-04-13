@@ -13,7 +13,7 @@ before_install:
   - gcloud auth activate-service-account --key-file service-account.json
   - gcloud config set project rock-brand-237109
   - gcloud config set compute/zone australia-southeast1-b
-  - glcoud container clusters get-credentials multi-cluster
+  - gcloud container clusters get-credentials multi-cluster
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
   - docker build -t skorov/react-test -f ./client/Dockerfile.dev ./client
 
