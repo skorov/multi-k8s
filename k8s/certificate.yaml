@@ -4,7 +4,7 @@ metadata:
   name: k8s-negaver-se-tls
 spec:
   secretName: k8s-negaver-se
-  issuerRed:
+  issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
   commonName: k8s.negaver.se
